@@ -29,6 +29,19 @@ docker-compose up -d
 
 This will start the API along with a PostgreSQL database.
 
+## 🌍 API URL
+
+When the container is running, the API will be available at:
+
+- **From the host machine**: `http://localhost:3000`
+- **From another container in the same network**: `http://api:3000`
+
+To test the API, you can run:
+
+```sh
+curl http://localhost:3000/health
+```
+
 ## 💁️ Project Structure
 
 ```
@@ -71,7 +84,7 @@ This will start the API along with a PostgreSQL database.
 
 ### 🔹 Get Transfers from the Last Month
 
-**GET** `/transfers`
+**GET** `/transfers?startDate=2025-03-01&endDate=2025-03-10`
 
 📌 **Response:**
 
