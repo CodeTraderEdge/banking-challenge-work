@@ -1,0 +1,17 @@
+{
+  "name": "banking-challenge",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "keywords": [],
+  "author": "Tomas Coeli",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
