@@ -1,6 +1,6 @@
 class HealthCheckController {
     async handle(req, res) {
-        res.status(200).json({ status: 'ok' })
+        res.json({ status: 'ok' })
     }
 }
 
