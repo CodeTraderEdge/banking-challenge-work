@@ -7,7 +7,8 @@ class GetCompaniesByAdhesionService {
     async findAdhesionsLastMonth() {
         const companiesRepository = new CompaniesRepository()
         const companiesData = await companiesRepository.findAdhesionsLastMonth()
-        return companiesData.map(company => Company.fromPrimitives(company))
+        const createEntities = companiesData.map(company => Company.fromPrimitives(company))
+        return createEntities
     }
 }
 

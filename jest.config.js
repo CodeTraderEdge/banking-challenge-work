@@ -4,6 +4,7 @@ export default {
     '/src/index.js',                
     '/src/server.js',               
     '/src/infrastructure/config/',  
-    '/src/infrastructure/http/'
+    '/src/infrastructure/http/',
+    '/src/infrastructure/database/'
   ],
 };

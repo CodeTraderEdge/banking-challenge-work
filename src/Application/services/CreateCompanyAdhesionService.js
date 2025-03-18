@@ -14,7 +14,7 @@ class CreateCompanyAdhesionService {
         const companiesRepository = new CompaniesRepository()
         const existingCompany = await companiesRepository.findByCuit(cuit)
         
-        if (existingCompany) {
+        if (existingCompany.length) {
             throw new CompanyAlreadyExistsException(cuit)
         }
 

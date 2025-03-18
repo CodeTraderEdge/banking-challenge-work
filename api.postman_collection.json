@@ -70,7 +70,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Company Z\",\r\n    \"cuit\": 30132133745\r\n}",
+							"raw": "{\r\n    \"name\": \"Company Z\",\r\n    \"cuit\": 32132163745\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -89,39 +89,7 @@
 							]
 						}
 					},
-					"response": [
-						{
-							"name": "Conflic 409 Has Exists",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"Company Z\",\r\n    \"cuit\": 30123456781\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:3000/companies",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3000",
-									"path": [
-										"companies"
-									]
-								}
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"body": null
-						}
-					]
+					"response": []
 				}
 			]
 		}

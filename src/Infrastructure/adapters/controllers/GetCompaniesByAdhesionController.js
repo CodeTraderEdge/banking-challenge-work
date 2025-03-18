@@ -8,7 +8,7 @@ class GetCompaniesByAdhesionController {
             const getCompaniesService = new GetCompaniesByAdhesionService()
             const companies = await getCompaniesService.findAdhesionsLastMonth()
             
-            return res.json(companies)
+            return res.json(companies.map(company => (company.toPrimitives())))
         } catch (error) {
             return res.status(error.statusCode).json({ error: error.message })
         }

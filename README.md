@@ -10,6 +10,7 @@ This project is an API developed in Node.js following the hexagonal architecture
 - Mock database for testing without a real database.
 - HTTP exception handling with dedicated classes.
 - Unit and e2e tests, with specific tests for uncovered cases.
+- Docker support for easy deployment and local development.
 
 ## 🚀 Installation and Execution
 
@@ -20,19 +21,13 @@ git clone https://github.com/CodeTraderEdge/banking-challenge-work
 cd banking-challenge-work
 ```
 
-### 2 Install Dependencies
+### 2 Start the Project
 
 ```sh
-npm install
+docker-compose up -d 
 ```
 
-### 3 Start the Server
-
-```sh
-npm run start
-```
-
-By default, the server runs at `http://localhost:3000`.
+This will start the API along with a PostgreSQL database.
 
 ## 💁️ Project Structure
 
@@ -52,6 +47,9 @@ By default, the server runs at `http://localhost:3000`.
 │   ├── index.js
 │   ├── server.js
 ├── test
+├── sql
+│   ├── init.sql
+├── docker-compose.yml
 ├── .env
 ├── package.json
 ├── README.md
@@ -133,10 +131,11 @@ By default, the server runs at `http://localhost:3000`.
 ## 🛠 Technologies Used
 
 - Node.js
+- PostgreSQL
+- Docker & Docker Compose
 - Hexagonal Architecture
 - Unit Testing with Jest
 
 ## 🐜 License
 
 This project is licensed under the MIT License. Feel free to contribute! 🚀
-

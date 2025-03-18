@@ -9,7 +9,6 @@ class GetTransfersByDateService {
         const rawTransfers = await transfersRepository.findByDateRange(startDate, endDate)
 
         const transfers = rawTransfers.map(transfer => Transfer.fromPrimitives(transfer))
-
         return transfers
     }
 }
