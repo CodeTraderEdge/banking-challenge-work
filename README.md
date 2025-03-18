@@ -13,20 +13,20 @@ This project is an API developed in Node.js following the hexagonal architecture
 
 ## 🚀 Installation and Execution
 
-### 1⃣ Clone the Repository
+### 1 Clone the Repository
 
 ```sh
 git clone https://github.com/CodeTraderEdge/banking-challenge-work
 cd banking-challenge-work
 ```
 
-### 2⃣ Install Dependencies
+### 2 Install Dependencies
 
 ```sh
 npm install
 ```
 
-### 3⃣ Start the Server
+### 3 Start the Server
 
 ```sh
 npm run start
