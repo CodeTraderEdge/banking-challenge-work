@@ -2,7 +2,7 @@ CREATE TABLE companies (
     id SERIAL PRIMARY KEY,
     cuit VARCHAR(12) UNIQUE NOT NULL,
     name VARCHAR(50) NOT NULL,
-    adhesion_date TIMESTAMP NOT NULL DEFAULT NOW()
+    date TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
 CREATE TABLE transfers (
