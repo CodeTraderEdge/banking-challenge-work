@@ -14,7 +14,6 @@ class TransfersRepository {
                 amount: parseFloat(row.amount)
             }))
         } catch (error) {
-            console.log(error);
             throw new DatabaseException()
         }
     }
