@@ -133,12 +133,7 @@ curl http://localhost:3000/health
 📌 **Response:**
 
 ```json
-{
-  "id": 8,
-  "name": "New Company",
-  "cuit": 30987654321,
-  "adhesionDate": "2025-04-10T14:00:00.000Z"
-}
+""
 ```
 
 ## 🛠 Technologies Used
